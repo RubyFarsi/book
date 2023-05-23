@@ -14,7 +14,7 @@
 # For the registry of tags:
 # http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 # Useful lookup tool: http://r12a.github.io/apps/subtags/
-language: en
+language: fa
 
 # Gem-based theme
 # ---------------

@@ -14,6 +14,8 @@ A figure is the combination of an image and a caption. Sometimes a figure can in
 
 ## The figure include
 
+## این تست است
+
 Figures are best created with the `figure` include. The `figure` include is a dedicated piece of code in our template that creates figures with many options.
 
 To include a figure this way, start with this simple tag:

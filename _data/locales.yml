@@ -579,9 +579,111 @@ fr:
 # pi:
 #   iso-name: "Pāli"
 #   local-name: ""
-# fa:
-#   iso-name: "Persian (Farsi)"
-#   local-name: ""
+fa:
+  iso-name: "Persian (Farsi)"
+  local-name: "فارسی"
+  project:
+    # Project items are set for the parent language
+    # in _data/project.yml and can be overridden here.
+    # Project 'name' also sets the HTML title on the home page.
+    organisation: ""
+    url: ""
+    email: ""
+    name: ""
+    description: ""
+    image: ""
+    credit: ""
+  features:
+    copyright-page: "Copyright [Goudarz Jafari](https://goudarzjafari.com)"
+  nav:
+    home: "صفحه اصلی"
+    menu: "منو"
+    next: "بعدی"
+    previous: "قبلی"
+    back: "&larr;"
+  input:
+    submit: "Submit"
+    send: "Send"
+    show: "Show"
+    hide: "Hide"
+    close: "Close"
+  search:
+    search-title: "جستجو"
+    placeholder: "از اینجا جسنجو کنید..."
+    placeholder-searching: "در حال حستجو..."
+    search-results: "Search results"
+    results-for-singular: "result found for"
+    results-for-plural: "results found for"
+    results-for-none: "نتیجه‌ای یافت نشد برای"
+    jump-to-first: "Jump to first result ↓"
+    notice: ""
+  questions:
+    check-answers-button: "Check my answers"
+    feedback-correct: "Correct!"
+    feedback-incorrect: "Incorrect"
+    feedback-unfinished: "You haven't selected all the correct answers."
+    mark-correct: "&#10003;" # check mark
+    mark-incorrect: "&#10007;" # ballot x
+  quiz:
+    total: "Total"
+  cross-references:
+    pre-page-number: "(page "
+    post-page-number: ")"
+  account:
+    login: "Log in"
+    my-account: "My account"
+  annotator:
+    show-sidebar-tooltip-title: "Open annotations"
+    show-sidebar-tooltip-description: "Tap here to show the annotations sidebar. Select text to highlight and create notes on this page."
+    show-annotated-text-tooltip-title: "Highlight annotations"
+    show-annotated-text-tooltip-description: "Tap here to show or hide the annotation highlights on this page."
+  bookmarks:
+    bookmark: "نشانک"
+    bookmarks: "نشانک‌ها"
+    bookmarks-tip: "برای اینکه متنی را نشانک کنید، آن را انتخاب کنید یا روی آن ضربه بزنید تا آیکون نشانک ظاهر شود بعد روی آن ضربه بزنید که ذخیره شود. نشانک‌ها در کش مرورگر ذخیره می‌شود و اگر هر موقع کش مرورگر را پاک کنید تمام نشانک‌ها هم پاک می‌شوند."
+    last-location: "آخرین بازدید شما"
+    last-locations-tip: "آخرین باری که سر زدی به کتاب، تا اینجا رو خوندی."
+    last-location-prompt: "از آخرین باری که به اینجا سر زدی می‌خوای، ادامه بدی؟"
+    delete-bookmark: "حذف"
+    delete-all: "حذف همه"
+    delete-bookmark-confirm: "برای تایید، دوباره ضربه بزنید"
+    delete-all-bookmarks-confirm: "برای تایید، دوباره ضربه بزنید"
+    bookmarks-shifted-warning: "به نظر میاد یک نشانک دقیقا با مکان اصلی خودش تطبیق نداره، شاید محتوای صفحه تغییر کرده باشه."
+  accordion:
+    show-all: "Expand all"
+    close-all: "Close all"
+  controls:
+    language-select: "Select language"
+  video:
+    options-button: "Other video options"
+  copy:
+    copy: "کپی"
+    copied: "کپی شد"
+    copy-failed: "Sorry, try again"
+  footnotes:
+    close-footnote: "Close footnote"
+    reversefootnote-alt: "Back to text"
+  pdf:
+    cover: "Cover"
+  # Comment out a network to remove it
+  # from the share menu
+  share:
+    share: "اشتراک گذاری"
+    link: "پیوند"
+    email: "ایمیل"
+    facebook: "فیس‌بوک"
+    linkedin: "لینکدین"
+    reddit: "ردیت"
+    twitter: "توییتر"
+    whatsapp: "واتس‌اپ"
+    # buffer: "Buffer"
+    # delicious: "Delicious"
+    # evernote: "Evernote"
+    # pinterest: "Pinterest"
+    # pocket: "Pocket"
+    # stumbleupon: "Stumbleupon"
+    # tumblr: "Tumblr"
+    # wordpress: "WordPress"
 # pl:
 #   iso-name: "Polish"
 #   local-name: ""

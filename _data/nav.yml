@@ -15,3 +15,9 @@ fr:
     file: "fr/about"
   - label: "Nous contacter"
     file: "fr/contact"
+
+fa:
+  - label: "درباره ما"
+    file: "about"
+  - label: "تماس با ما"
+    file: "contact"

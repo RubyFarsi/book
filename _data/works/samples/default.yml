@@ -7,7 +7,7 @@ title: "Samples"
 subtitle: "Sample content for Electric Book print, epub and web output"
 
 # The author
-creator: "Arthur Attwell"
+creator: "Goudarz Jafari"
 
 # The book's blurb
 description: |
@@ -36,7 +36,7 @@ rights: |
 # Language code
 # Use ISO 639-1, 639-2, or 639-3 codes
 # (in that order of preference)
-language: "en"
+language: "fa"
 
 # Official, original publication date
 # YYYY-MM-DD

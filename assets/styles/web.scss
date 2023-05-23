@@ -41,3 +41,275 @@
 
 // Add any custom Sass or CSS here.
 
+body {
+    direction: rtl !important;
+}
+
+[data-toggle] {
+    right: unset;
+    left: 0;
+}
+
+.share-links-close {
+    &::before {
+        width: 1.80rem;
+        top: -0.10rem; // manual alignment
+    }
+}
+
+button.copy-to-clipboard {
+    margin-right: 1rem;
+}
+
+ul {
+    .share-link {
+        .share-link-icon {
+            display: inline-block;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+            width: 1rem;
+
+            svg {
+                path {
+                    fill: $grey-mid;
+                }
+            }
+        }
+
+        .share-link-label {
+            line-height: 1;
+        }
+    }
+}
+
+
+// The modal
+.bookmarks-modal {
+    @include dialog-styles();
+    background-color: $color-background;
+    border-color: $bookmark-border-color;
+    &, * {
+        // Already applied globally in EBT styles,
+        // but may be required for copy-pasting into other projects.
+        box-sizing: border-box;
+    }
+
+    // Hide the list till click on parent
+    display: none;
+
+    // Appearance
+    list-style-type: none;
+    padding: 0; // override default masthead padding
+    overflow: auto;
+
+    // Position
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    height: 25em;
+    max-height: 80vh; // allow space to tap out
+    max-width: 80vw; // allow space to tap out
+    transform: translate(-50%, -50%);
+    width: 25em;
+
+    // Show/Hide
+    .bookmarks-list,
+    .last-locations-list {
+
+        .bookmarks-list-content,
+        .last-locations-list-content {
+            // display: none;
+            position: relative;
+            visibility: hidden;
+            z-index: -1;
+        }
+
+        &.bookmarks-list-open {
+            .bookmarks-list-content,
+            .last-locations-list-content {
+                // display: block;
+                position: relative;
+                visibility: visible;
+                z-index: 1;
+            }
+        }
+    }
+
+    .last-locations-list {
+
+        .last-locations-list-header {
+            right: 50%!important;
+        }
+    }
+
+    .bookmarks-list,
+    .last-locations-list {
+
+        text-align: right;
+
+        // Position
+        right: 0;
+        left: 0;
+
+        .bookmarks-list-header,
+        .last-locations-list-header {
+            // Position
+            right: 0;
+            left: 50%;
+        }
+
+        .bookmarks-list-header {
+            border-left: $rule-thickness solid $bookmark-border-color;
+        }
+        ul {
+
+            // Appearance
+            margin: 0;
+            padding: 1em;
+
+            &:empty {
+                // Don't take up space if empty
+                margin: 0;
+                min-height: 0;
+                padding: 0;
+            }
+
+            li {
+                display: block; // overrides masthead ul styles
+                font-size: 0.9em;
+                line-height: 1;
+                margin-bottom: 2em;
+                &:last-child { margin-bottom: 0; }
+
+                a {
+                    color: $color-links;
+                    text-decoration: none;
+                }
+
+                .bookmark-title {
+                    color: $bookmark-text-color-secondary;
+                    font-family: $font-text-secondary;
+                    font-size: 0.7em;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+
+                    &::after {
+                        color: $bookmark-text-color-secondary;
+                        content: "\2022";
+                        font-size: 1rem;
+                        font-style: normal;
+                        margin: 0 0.25em;
+                    }
+                }
+
+                .bookmark-date {
+                    color: $bookmark-text-color-secondary;
+                    font-family: $font-text-secondary;
+                    font-size: 0.7em;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                }
+
+                .bookmark-page {
+                    display: inline-block;
+                    font-family: $font-text-secondary;
+                    font-size: 0.85em;
+                    font-weight: 600;
+                }
+
+                .bookmark-section {
+                    font-family: $font-text-secondary;
+                    font-size: 0.9em;
+                    font-weight: 600;
+
+                    &::before {
+                        color: $bookmark-text-color-secondary;
+                        content: "\2022";
+                        font-size: 1rem;
+                        font-style: normal;
+                        margin: 0 0.25em;
+                    }
+                }
+
+                .bookmark-description {
+                    display: block;
+                    font-family: $font-text-main;
+                    font-size: 0.9em;
+                    line-height: 1.2;
+                    margin: ($line-height-default * 0.25) 0;
+                }
+
+                .bookmark-delete {
+                    float: left;
+                }
+
+                &.bookmarks-delete-all {
+                    text-align: center;
+                    // Don't show if there are no bookmarks listed
+                    &:only-child {
+                        display: none;
+                    }
+                }
+
+                // override inherited styles from masthead ul li:after
+                &:after {
+                    content: normal;
+                }
+
+                svg {
+                    display: inline-block;
+                    height: 0.75em;
+                    margin-right: 0.5em;
+                    width: 0.75em;
+
+                    path {
+                        fill: $bookmark-icon-color-active;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    // Bookmark button
+    .bookmark-button {
+        float: right;
+
+        svg {
+
+            // Keep in same place in margin even when
+            // parent element is indented
+            right: 0;
+            left: unset;
+
+            // On large screens, have the button just to the left of the text,
+            // in the margin (which doesn't exist on small screens).
+            // Overridden for bookmark-pending below.
+            @media only screen and (min-width: $break-width-medium) {
+                right: auto;
+                left: unset;
+            }
+        }
+    }
+
+    .content .bookmark-pending {
+        & > .bookmark-button {
+
+            // While selecting text, show button at this position,
+            // inserted as a property in the style attribute by JS.
+            // Custom properties not supported by IE, so position
+            // will remain static there.
+            // We add space to the left of the button because
+            // on mobile, the button is otherwise too close to the
+            // text-selection tool and can't be tapped.
+            right: calc(var(--bookmark-button-position-x) + 1em);
+            left: unset;
+
+            // While pending, make button larger for easier pressing
+            svg {
+                // Override large-screen positioning in media query above
+                right: 0;
+                left: unset;
+            }
+        }
+    }

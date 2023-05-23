@@ -5,10 +5,10 @@ organisation: "Electric Book Works"
 url: "http://ebw.co/template"
 
 # The default contact email address
-email: "support@electricbookworks.com"
+email: "goudarz.jafari@gmail.com"
 
 # The name of the project of books in this folder.
-name: "The Electric Book template"
+name: "زبان روبی فارسی"
 
 # A one-liner about this project. Useful for Open Graph metadata.
 description: "This is Electric Book template, a way to build websites, books and ebooks from the same master content. Created and maintained by Electric Book Works."
@@ -23,10 +23,10 @@ image: "cover.jpg"
 credit: "Built with the [Electric Book](https://ebw.co/template)"
 
 # Primary language code for this project as a whole
-language: "en"
+language: "fa"
 
 # App bundle ID unique across all app stores
-app-id: com.example.myapp
+app-id: com.rubyfarsi
 
 # Version. You must change this with each app update
 version: "1.0.0"
