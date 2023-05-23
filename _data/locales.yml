@@ -587,7 +587,7 @@ fa:
     # in _data/project.yml and can be overridden here.
     # Project 'name' also sets the HTML title on the home page.
     organisation: ""
-    url: ""
+    url: "https://book.rubyfarsi.ir/"
     email: ""
     name: ""
     description: ""
