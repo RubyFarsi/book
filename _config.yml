@@ -46,7 +46,7 @@ baseurl: ""
 # add username/repository here and uncomment/enable
 # gem 'github-pages', group: :jekyll_plugins
 # in this project's Gemfile.
-repository: ""
+repository: "RubyFarsi/book"
 
 # MathJax
 # -------

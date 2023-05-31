@@ -1,7 +1,7 @@
 ---
 # Replace the text on this page with content
 # for your your own project's landing page.
-title: زبان روبی فارسی
+title: آموزش فارسی زبان  برنامه نویسی روبی
 style: home
 ---
 

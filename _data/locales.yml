@@ -586,13 +586,13 @@ fa:
     # Project items are set for the parent language
     # in _data/project.yml and can be overridden here.
     # Project 'name' also sets the HTML title on the home page.
-    organisation: ""
+    organisation: "گودرز جعفری"
     url: "https://book.rubyfarsi.ir/"
-    email: ""
-    name: ""
+    email: "goudarz.jafari@gmail.com"
+    name: "آموزش فارسی زبان  برنامه نویسی روبی"
     description: ""
     image: ""
-    credit: ""
+    credit: "Goudarz Jafari"
   features:
     copyright-page: "Copyright [Goudarz Jafari](https://goudarzjafari.com)"
   nav:
@@ -610,7 +610,7 @@ fa:
   search:
     search-title: "جستجو"
     placeholder: "از اینجا جسنجو کنید..."
-    placeholder-searching: "در حال حستجو..."
+    placeholder-searching: "در حال جستجو..."
     search-results: "Search results"
     results-for-singular: "result found for"
     results-for-plural: "results found for"
@@ -643,7 +643,7 @@ fa:
     bookmarks-tip: "برای اینکه متنی را نشانک کنید، آن را انتخاب کنید یا روی آن ضربه بزنید تا آیکون نشانک ظاهر شود بعد روی آن ضربه بزنید که ذخیره شود. نشانک‌ها در کش مرورگر ذخیره می‌شود و اگر هر موقع کش مرورگر را پاک کنید تمام نشانک‌ها هم پاک می‌شوند."
     last-location: "آخرین بازدید شما"
     last-locations-tip: "آخرین باری که سر زدی به کتاب، تا اینجا رو خوندی."
-    last-location-prompt: "از آخرین باری که به اینجا سر زدی می‌خوای، ادامه بدی؟"
+    last-location-prompt: "از اون قسمتی که آخرین با خوندی، می‌خوای ادامه بدی؟"
     delete-bookmark: "حذف"
     delete-all: "حذف همه"
     delete-bookmark-confirm: "برای تایید، دوباره ضربه بزنید"
