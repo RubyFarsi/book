@@ -154,7 +154,7 @@ products:
       - label: "Other frontmatter"
         file: "00-09-frontmatter"
         class: "frontmatter-entry"
-      - label: "Text"
+      - label: "فصل اول: آشنایی با مفاهیم روبی"
         children:
           - label: "Plain text"
             file: "01-01-plain-text-1"
@@ -349,7 +349,7 @@ products:
           - label: "Other frontmatter"
             file: "00-09-frontmatter"
             class: "frontmatter-entry"
-      - label: "Text"
+      - label: "فصل اول: آشنایی با مفاهیم روبی"
         children:
           - label: "Plain text"
             file: "01-01-plain-text-1"
